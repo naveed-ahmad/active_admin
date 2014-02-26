@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'devise', github: 'naveed-ahmad/devise'
 gemspec
 
 ACTIVE_ADMIN_PATH = File.dirname(__FILE__) unless defined?(ACTIVE_ADMIN_PATH)
@@ -10,7 +11,6 @@ rails_version = detect_rails_version
 gem 'rails', rails_version
 
 gem 'arbre', github: 'gregbell/arbre' # until gregbell/arbre#16 makes it into an official release
-
 gem 'rake', require: false
 gem 'rails-i18n' # Provides default i18n for many languages
 
